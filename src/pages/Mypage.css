@@ -1,0 +1,59 @@
+/* 마이페이지 전체 컨테이너 */
+.mypage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #f5f7fa;
+  }
+  
+  /* 마이페이지 박스 */
+  .mypage-box {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  /* 마이페이지 제목 */
+  .mypage-box h2 {
+    color: #2a5298;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* 사용자 정보 스타일 */
+  .mypage-box p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  /* 강조된 텍스트 */
+  .mypage-box strong {
+    color: #1e3c72;
+  }
+  
+  /* 로그아웃 버튼 스타일 */
+  .logout-button {
+    width: 100%;
+    background-color: #2a5298;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .logout-button:hover {
+    background-color: #1e3c72;
+    transform: scale(1.05);
+  }
+  

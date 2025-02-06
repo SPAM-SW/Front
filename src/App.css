@@ -1,0 +1,178 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  background: linear-gradient(90deg, #1e3c72, #2a5298);
+  padding: 13px 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: #fff;
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #e0e0e0;
+}
+
+/* 페이지 제목 */
+.page-title {
+  text-align: left;
+  font-size: 3rem;
+  margin: 30px 0 20px 50px;
+  color: #2a5298;
+  font-style: italic;
+}
+
+/* 버튼 스타일 */
+button {
+  background-color: #2a5298;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #1e3c72;
+  transform: scale(1.05);
+}
+
+/* 폼 스타일 */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #2a5298;
+}
+
+.spam-search {
+  font-size: 1.5rem; /* 기존보다 크게 */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.spam-search textarea {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+  resize: none;
+  overflow-y: auto;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 결과 목록 스타일 */
+.results {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.result-item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* 고정 텍스트 박스 */
+.fixed-textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: none;
+  overflow-y: auto;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 링크 페이지 스타일 */
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+/* 오른쪽 사이드 링크 */
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin: 30px auto;
+}
+
+.rightSide a {
+  font-size: 1.1rem;
+  color: #737a85;
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.rightSide a:hover {
+  color: #1e3c72;
+}
+
+.login-container + .rightSide {
+  display: none;
+}
+/* 로그인, 회원가입 페이지에서는 .rightSide 숨기기 */
+.login-container + .rightSide,
+.signup-container + .rightSide {
+  display: none;
+}
